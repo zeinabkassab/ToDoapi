@@ -8,8 +8,9 @@ const multer = require('multer')
 
 
 // Add token part and add users
-router.post('/users', async (req, res) => {
 
+router.post('/users/register', async (req, res) => {
+debugger;
     const userIn = new User(req.body)
         try{
            await userIn.save()
